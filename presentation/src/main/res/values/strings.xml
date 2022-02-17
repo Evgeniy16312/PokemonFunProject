@@ -1,8 +1,30 @@
 <resources>
     <string name="app_name">PokemonFunProject</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
     <string name="search">Search</string>
     <string name="favorites">Favorites</string>
+    <string name="check_internet_connection">Check_internet_connection</string>
+    <string name="splash_gif">Splash_gif</string>
+    <string name="pokemon_number_format">#%d</string>
+    <string name="all_types">All Types</string>
+    <string name="rock">rock</string>
+    <string name="steel">steel</string>
+    <string name="psychic">psychic</string>
+    <string name="poison">poison</string>
+    <string name="water">water</string>
+    <string name="normal">normal</string>
+    <string name="ice">ice</string>
+    <string name="ground">ground</string>
+    <string name="ghost">ghost</string>
+    <string name="grass">grass</string>
+    <string name="flying">flying</string>
+    <string name="fire">fire</string>
+    <string name="fighting">fighting</string>
+    <string name="fairy">fairy</string>
+    <string name="electric">electric</string>
+    <string name="dragon">dragon</string>
+    <string name="dark">dark</string>
+    <string name="bug">bug</string>
 </resources>
