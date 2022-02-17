@@ -1,4 +1,4 @@
-package api
+package com.example.data.api
 
 class Constants {
     companion object {

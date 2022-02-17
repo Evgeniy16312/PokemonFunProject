@@ -1,6 +1,6 @@
-package repository
+package com.example.data.repository
 
-import api.RetrofitInstance
+import com.example.data.api.RetrofitInstance
 import com.example.domain.model.Pokemon
 import com.example.domain.model.PokemonResults
 import com.example.domain.model.PokemonTypeResults
