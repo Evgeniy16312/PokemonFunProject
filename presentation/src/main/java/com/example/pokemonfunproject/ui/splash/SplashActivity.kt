@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.animation.LinearInterpolator
 import com.bumptech.glide.Glide
 import com.example.pokemonfunproject.R
 import com.example.pokemonfunproject.databinding.ActivitySplashBinding
@@ -29,6 +30,9 @@ class SplashActivity : AppCompatActivity() {
                 .load(R.drawable.splash)
                 .into(it)
         }
+
+        binding!!.pokeAnimationImageView.animate().rotationBy(300f)
+            .setInterpolator(LinearInterpolator()).duration = 3000
 
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
