@@ -8,6 +8,10 @@ import com.example.pokemonfunproject.R
 import com.example.pokemonfunproject.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private var binding: ActivityMainBinding? = null
+    private lateinit var viewBinding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val viewBinding = ActivityMainBinding.inflate(layoutInflater)
