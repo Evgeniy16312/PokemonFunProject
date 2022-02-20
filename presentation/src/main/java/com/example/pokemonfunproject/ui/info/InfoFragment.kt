@@ -20,7 +20,6 @@ import com.example.domain.model.Pokemon
 import com.example.domain.model.Type
 import com.example.pokemonfunproject.R
 import com.example.pokemonfunproject.databinding.FragmentInfoBinding
-import com.example.pokemonfunproject.databinding.FragmentSearchBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
