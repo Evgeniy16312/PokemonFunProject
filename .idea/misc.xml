@@ -3,15 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Turins/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/drawable/bottom_navigation_background.xml" value="0.2203125" />
-        <entry key="..\:/Users/Turins/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/drawable/favorite.xml" value="0.2203125" />
-        <entry key="..\:/Users/Turins/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/drawable/favorite_border.xml" value="0.2203125" />
-        <entry key="..\:/Users/Turins/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/drawable/favorite_button_selector.xml" value="0.2203125" />
-        <entry key="..\:/Users/Turins/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/drawable/home.xml" value="0.2203125" />
-        <entry key="..\:/Users/Turins/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
-        <entry key="..\:/Users/Turins/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/drawable/search.xml" value="0.2203125" />
-        <entry key="..\:/Users/Turins/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/Turins/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/menu/bottom_nav.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/E2772/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/drawable/no_internet_icon.xml" value="0.1" />
+        <entry key="..\:/Users/E2772/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/drawable/rounded_background.xml" value="0.1" />
+        <entry key="..\:/Users/E2772/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/drawable/rounded_border.xml" value="0.105" />
+        <entry key="..\:/Users/E2772/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/layout/activity_splash.xml" value="0.15463917525773196" />
+        <entry key="..\:/Users/E2772/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/E2772/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/layout/pokemon_item.xml" value="0.1461187214611872" />
+        <entry key="..\:/Users/E2772/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/layout/pokemon_item_placeholder.xml" value="0.25" />
+        <entry key="..\:/Users/E2772/AndroidStudioProjects/PokemonFunProject/presentation/src/main/res/layout/shimmer_progress_animation.xml" value="0.24814814814814815" />
       </map>
     </option>
   </component>
