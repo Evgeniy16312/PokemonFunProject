@@ -1,9 +1,9 @@
-package api
+package com.example.data.api
 
-import api.Constants.Companion.GET_POKEMON
-import api.Constants.Companion.GET_POKEMON_RESULT
-import api.Constants.Companion.GET_POKEMON_TYPE_RESULT
-import api.Constants.Companion.GET_SPECIES
+import com.example.data.api.Constants.Companion.GET_POKEMON
+import com.example.data.api.Constants.Companion.GET_POKEMON_RESULT
+import com.example.data.api.Constants.Companion.GET_POKEMON_TYPE_RESULT
+import com.example.data.api.Constants.Companion.GET_SPECIES
 import com.example.domain.model.Pokemon
 import com.example.domain.model.PokemonResults
 import com.example.domain.model.PokemonTypeResults
