@@ -25,6 +25,14 @@ The application has the ability to find Pokemon by name and the ability to add P
 ---
 ## Screenshots
 
+Splash screen | Shimmer
+---|---
+![splash](https://user-images.githubusercontent.com/84197411/155498219-64d0ce92-10e7-4154-8239-dffbb642812c.jpg) | ![shimmer](https://user-images.githubusercontent.com/84197411/155498225-c54efaae-ffaa-44fb-8088-62ddfee24414.jpg)
+
 Home screen | Pokemon information
 ---|---
 ![home](https://user-images.githubusercontent.com/84197411/155498196-963d6676-b107-4464-9e48-9153bd7f9bec.jpg) | ![info](https://user-images.githubusercontent.com/84197411/155498213-ee451fb2-d147-461a-9acf-420ad2d2dce7.jpg)
+
+Search pokemon | Favorite pokemon
+---|---
+![search](https://user-images.githubusercontent.com/84197411/155498200-9e8c6541-e8b7-402a-a388-a5bb9d7c00b2.jpg) | ![favorite](https://user-images.githubusercontent.com/84197411/155498205-5df7601a-2a0f-432a-9b1e-0af589b1abc6.jpg)
