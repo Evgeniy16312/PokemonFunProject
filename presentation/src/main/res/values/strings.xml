@@ -34,4 +34,26 @@
     <string name="search_textview_default_message">Write a keyword in the search bar!</string>
     <string name="search_textview_error_message">Error! Nothing found.</string>
     <string name="search_pokemon">Search pokemon</string>
+    //InfoFragment
+    <string name="description">description</string>
+    <string name="basic_info">basic_info</string>
+    <string name="base_xp">base_xp</string>
+    <string name="height">height</string>
+    <string name="weight">weight</string>
+    <string name="catch_rate">catch_rate</string>
+    <string name="stats">stats</string>
+    <string name="hp">hp</string>
+    <string name="attack">attack</string>
+    <string name="defense">defense</string>
+    <string name="special_attack">special_attack</string>
+    <string name="special_defense">special_defense</string>
+    <string name="speed">speed</string>
+    <string name="favorite_tag">favorite</string>
+    <string name="not_favorite_tag">not_favorite</string>
+    <string name="toast_added_to_favorites">Added %s to Favorites.</string>
+    <string name="toast_removed_from_favorites">Removed %s from Favorites.</string>
+    <string name="height_format">%d cm</string>
+    <string name="weight_format">%.1f kg</string>
+    <string name="searchdescr">SearchDescr</string>
+    <string name="cancel_search_butt_descr">Cancel_search_butt_descr</string>
 </resources>

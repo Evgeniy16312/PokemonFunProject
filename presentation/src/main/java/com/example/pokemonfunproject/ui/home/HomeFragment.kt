@@ -187,7 +187,7 @@ class HomeFragment : Fragment() {
 
     private fun setupAdapter(lastPosition: Int) {
         adapter = PokeRecyclerViewAdapter(clickListener = {
-            val action = HomeFragmentDirections.actionHomeFragmentToInfoFragment()
+            val action = HomeFragmentDirections.actionHomeFragmentToInfoFragment(it)
             Navigation.findNavController(requireView()).navigate(action)
         }, favoriteButtonClickListener = { pokemon: Pokemon, isSelected: Boolean ->
             if (isSelected) {
@@ -295,9 +295,7 @@ class HomeFragment : Fragment() {
 
     override fun onDestroy() {
         super.onDestroy()
-        viewBinding.allTypesChip.isChecked = true
-        viewBinding.horizontalChips.scrollTo(0, 0)
-        allTypesList.clear()
+        binding = null
     }
 
     companion object {

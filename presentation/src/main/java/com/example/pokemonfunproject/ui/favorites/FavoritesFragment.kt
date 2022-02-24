@@ -14,14 +14,12 @@ import com.example.pokemonfunproject.databinding.FragmentFavoritesBinding
 import com.example.pokemonfunproject.ui.common.adapter.PokeRecyclerViewAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-
 class FavoritesFragment : Fragment() {
 
     private var binding: FragmentFavoritesBinding? = null
     private lateinit var viewBinding: FragmentFavoritesBinding
     private val viewModel by viewModel<FavoritesViewModel>()
     private lateinit var adapter: PokeRecyclerViewAdapter
-
 
     override fun onResume() {
         super.onResume()
@@ -53,7 +51,7 @@ class FavoritesFragment : Fragment() {
 
     private fun setupAdapter() {
         adapter = PokeRecyclerViewAdapter(clickListener = {
-            val action = FavoritesFragmentDirections.actionFavoritesFragmentToInfoFragment()
+            val action = FavoritesFragmentDirections.actionFavoritesFragmentToInfoFragment(it)
             Navigation.findNavController(requireView()).navigate(action)
         }, favoriteButtonClickListener = { pokemon: Pokemon, isSelected: Boolean ->
             if (isSelected) {
@@ -79,5 +77,10 @@ class FavoritesFragment : Fragment() {
             )
             recyclerView.hasFixedSize()
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding = null
     }
 }

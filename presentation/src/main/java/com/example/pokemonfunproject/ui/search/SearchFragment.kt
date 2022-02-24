@@ -1,14 +1,11 @@
 package com.example.pokemonfunproject.ui.search
 
-import android.app.Activity
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
-import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
@@ -20,6 +17,8 @@ import com.example.domain.model.PokemonResults
 import com.example.pokemonfunproject.R
 import com.example.pokemonfunproject.databinding.FragmentSearchBinding
 import com.example.pokemonfunproject.ui.common.adapter.PokeRecyclerViewAdapter
+import com.example.pokemonfunproject.util.clearFocus
+import com.example.pokemonfunproject.util.hideKeyboard
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class SearchFragment : Fragment() {
@@ -102,7 +101,7 @@ class SearchFragment : Fragment() {
 
     private fun setupAdapter() {
         adapter = PokeRecyclerViewAdapter(clickListener = {
-            val action = SearchFragmentDirections.actionSearchFragmentToInfoFragment()
+            val action = SearchFragmentDirections.actionSearchFragmentToInfoFragment(it)
             Navigation.findNavController(requireView()).navigate(action)
         }, favoriteButtonClickListener = { pokemon: Pokemon, isSelected: Boolean ->
             if (isSelected) {
@@ -131,7 +130,7 @@ class SearchFragment : Fragment() {
     }
 
     private fun handlePokemonSearchAction(userEntryTextView: TextView, actionId: Int) {
-        hideKeyboard()
+        cancelInput()
         if (allPokemonNamesList.results.isEmpty()) viewModel.getAllPokemonNames()
         viewBinding.searchEdittext.clearFocus()
         val searchResultsPokemonList = mutableListOf<Pokemon>()
@@ -169,13 +168,13 @@ class SearchFragment : Fragment() {
         }
     }
 
-    private fun Fragment.hideKeyboard() {
-        view?.let { activity?.hideKeyboard(it) }
+    private fun cancelInput() {
+        hideKeyboard()
+        clearFocus()
     }
 
-    private fun Context.hideKeyboard(view: View) {
-        val inputMethodManager =
-            getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
-        inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+    override fun onDestroy() {
+        super.onDestroy()
+        binding = null
     }
 }

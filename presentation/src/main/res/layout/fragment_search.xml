@@ -37,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
+            android:autofillHints=""
             android:background="@null"
             android:drawableStart="@drawable/search_icon_small"
             android:drawablePadding="8dp"
@@ -46,7 +47,8 @@
             android:paddingHorizontal="12dp"
             android:paddingVertical="12dp"
             android:textColor="@color/title_color"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
             android:id="@+id/cancel_search_button"
@@ -56,6 +58,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_gravity="end|center_vertical"
+            android:contentDescription="@string/cancel_search_butt_descr"
             android:paddingHorizontal="12dp"
             android:paddingVertical="8dp"
             android:src="@drawable/cancel_icon_small"
@@ -73,7 +76,8 @@
         android:fadingEdgeLength="64dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:requiresFadingEdge="vertical" />
+        android:requiresFadingEdge="vertical"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <com.facebook.shimmer.ShimmerFrameLayout
         android:id="@+id/shimmer_layout"
@@ -112,13 +116,15 @@
         android:layout_marginBottom="72dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/search_imageview"
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:layout_gravity="center"
+            android:contentDescription="@string/searchdescr"
             android:src="@drawable/search" />
 
         <TextView
