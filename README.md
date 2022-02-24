@@ -2,8 +2,8 @@
 
 ## Description
 
-We get pokemon with API [link]("https://pokeapi.co/api/v2/") and display information about the pokemon. 
-- The application has the ability to find Pokemon by name and the ability to add Pokemon to favorites.
+We get pokemon with API  [link](https://pokeapi.co/api/v2/) and display information about the pokemon..<br/> 
+The application has the ability to find Pokemon by name and the ability to add Pokemon to favorites.
 
 ---
 
