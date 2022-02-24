@@ -5,7 +5,7 @@
     <string name="home">Home</string>
     <string name="search">Search</string>
     <string name="favorites">Favorites</string>
-    <string name="check_internet_connection">Check_internet_connection</string>
+    <string name="check_internet_connection">Проверка интернет соединения</string>
     <string name="splash_gif">Splash_gif</string>
     <string name="pokemon_number_format">#%d</string>
     <string name="all_types">All Types</string>
@@ -28,4 +28,5 @@
     <string name="dark">dark</string>
     <string name="bug">bug</string>
     <string name="pokemon_funs">Pokemon funs</string>
+    <string name="favorites_textview_message">Нажмите на значок в форме сердца на карточке покемона, чтобы добавить ее в избранное!</string>
 </resources>
